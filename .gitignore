@@ -1,0 +1,12 @@
+_site/
+node_modules/
+package-lock.json
+.DS_Store
+/css/main.css
+/fonts
+/_includes/css
+/_includes/js
+/uploads
+/.env
+_cache
+.cache
