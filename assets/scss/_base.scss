@@ -4,8 +4,14 @@ html {
 
 body {
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
   color: #FFFFFF;
   background-color: #000000;
+}
+
+.main-content {
+  padding-bottom: 192px;
 }
 
 .wrapper {

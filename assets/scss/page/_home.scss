@@ -58,3 +58,36 @@
     margin: 0;
   }
 }
+
+.about-us-intro {
+  margin-bottom: 48px;
+  color: var(--text-color);
+}
+
+.podcast-members {
+  display: grid;
+  column-gap: 48px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.podcast-member {
+  padding: 32px;
+  background-color: #18181B;
+  border-radius: 6px;
+}
+
+.podcast-member__profile {
+  margin: 0 0 24px;
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+.podcast-member__title {
+  margin: 0 0 8px;
+}
+
+.podcast-member__text {
+  color: var(--text-color);
+}

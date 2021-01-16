@@ -3,7 +3,7 @@ layout: layouts/base.njk
 metatitle: Home
 ---
 
-<main>
+<main class="main-content">
 	<section class="hero">
     <div class="wrapper wrapper--small">
       <figure class="podcast-cover">
@@ -69,23 +69,29 @@ metatitle: Home
   </section>
   
   <section class="about-us">
-    <h2>Über Uns</h2>
+    <div class="section-title-divider">
+      <div class="wrapper">
+        <h2 class="section-title-text">Über Uns</h2>
+      </div>
+    </div>
     <div class="wrapper">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna, in augue malesuada aliquam curabitur placerat hac. Dolor mauris scelerisque sit donec ut pretium pellentesque netus nulla.</p>
+      <div class="about-us-intro body-big wrapper--small">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna, in augue malesuada aliquam curabitur placerat hac. Dolor mauris scelerisque sit donec ut pretium pellentesque netus nulla.</p>
+      </div>
       <div class="podcast-members">
         <div class="podcast-member">
-          <figure>
-            <img src="" alt="">
+          <figure class="podcast-member__profile">
+            <img src="assets/images/arne-bahlo.jpg" alt="" width="96" height="96">
           </figure>
-          <h3>Arne Bahlo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.</p>
+          <h3 class="podcast-member__title title-4">Arne Bahlo</h3>
+          <p class="podcast-member__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.</p>
         </div>
         <div class="podcast-member">
-          <figure>
-            <img src="" alt="">
+          <figure class="podcast-member__profile">
+            <img src="assets/images/jan-fruechtl.jpg" alt="" width="96" height="96">
           </figure>
-          <h3>Jan Früchtl</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.</p>
+          <h3 class="podcast-member__title title-4">Jan Früchtl</h3>
+          <p class="podcast-member__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.</p>
         </div>
       </div>
     </div>
