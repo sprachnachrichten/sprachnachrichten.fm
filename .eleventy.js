@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true);
 	
 	eleventyConfig.addPassthroughCopy("assets/fonts");
+	eleventyConfig.addPassthroughCopy("assets/images");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt();

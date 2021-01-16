@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.0125rem;
+  text-decoration: none;
+  background: linear-gradient(102.71deg, #047857 -38.16%, #0E7490 167.39%);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  
+  &:hover, &:focus {
+    border: 2px solid white;
+  }
+}
+
+.button--small {
+  padding: 8px 24px;
+}
+
+.button--clean {
+  color: #A1A1AA;
+  background: transparent;
+
+  &:hover, &:focus {
+    color: white;
+  }
+}

@@ -40,14 +40,22 @@
       margin: 0;
     }
   }
-  
-  a {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #A1A1AA;
-    text-decoration: none;
+}
+
+.site-navigation__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #A1A1AA;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: #FFFFFF;
   }
+}
+
+.site-navigation__link--active {
+  color: #FFFFFF;
 }
 
 .site-header__cta {

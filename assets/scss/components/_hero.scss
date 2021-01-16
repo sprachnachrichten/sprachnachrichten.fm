@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 800px;
+  text-align: center;
+  background: #000000 url("/assets/images/hero-background.png");
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 72%, #000000 100%);
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+
+  .button--clean {
+    margin-left: 24px;
+  }
+}
