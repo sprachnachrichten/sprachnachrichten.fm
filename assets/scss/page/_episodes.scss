@@ -1,0 +1,17 @@
+.episodes-content {
+  padding: 96px 0 192px;
+}
+
+.episodes {
+  display: grid;
+  column-gap: 48px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.episodes-list {
+  grid-column: span 2;
+}
+
+.subscribe-sidebar {
+  grid-column: span 1;
+}
