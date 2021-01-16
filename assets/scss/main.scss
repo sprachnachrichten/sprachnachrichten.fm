@@ -1,6 +1,9 @@
 @import "base";
+@import "typography";
 
 @import "components/site-header";
 @import "components/button";
 @import "components/hero";
 @import "components/section";
+
+@import "page/home.scss"
