@@ -4,6 +4,8 @@ const markdownIt = require("markdown-it");
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setDataDeepMerge(true);
+	
+	eleventyConfig.addPassthroughCopy("assets/fonts");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt();

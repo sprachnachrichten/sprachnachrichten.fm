@@ -1,0 +1,19 @@
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1192px;
+}
+
+.wrapper--small {
+  max-width: 760px;
+}
