@@ -1,0 +1,48 @@
+.host-card {
+  margin-bottom: 48px;
+  padding: 24px;
+  background-color: #18181B;
+  border-radius: 6px;
+}
+
+.host-card-title {
+  margin-bottom: 16px;
+}
+
+.host-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.host-person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.host-image {
+  display: block;
+  margin-right: 16px;
+  border-radius: 6px;
+}
+
+.host-name {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.host-handle {
+  font-size: 0.875rem;
+  line-height: 1.25;
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}

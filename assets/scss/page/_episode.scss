@@ -1,0 +1,28 @@
+.episode {
+  padding: 96px 0 192px;
+}
+
+.episode-content {
+  display: grid;
+  column-gap: 48px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.episode-shownotes {
+  grid-column: span 2;
+}
+
+.episode-shownotes-card {
+  padding: 24px;
+  background-color: #18181B;
+  border-radius: 6px;
+
+  ul, ol {
+    padding: 0 0 0 16px;
+    line-height: 2;
+  }
+}
+
+.episode-sidebar {
+  grid-column: span 1;
+}

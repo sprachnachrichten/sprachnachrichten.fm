@@ -35,6 +35,16 @@ p {
   margin: 0 0 24px;
 }
 
+a {
+  color: #07C58F;
+  text-decoration: none;
+  
+  &:hover, &:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}
+
 .text-gray {
   color: var(--text-color);
 }
