@@ -8,8 +8,71 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.episodes-intro-text {
+  margin: 0 0 48px;
+}
+
 .episodes-list {
   grid-column: span 2;
+}
+
+.episodes-list-item {
+  margin-bottom: 32px;
+  padding: 24px;
+  background-color: #18181B;
+  border-radius: 6px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.episodes-item-title-link {
+  display: block;
+  margin-bottom: 4px;
+  color: white;
+  text-decoration: none;
+  
+  &:hover, &:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+  }
+}
+
+.episodes-item-title {
+  line-height: 1.35;
+}
+
+.episodes-item-details {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #71717A;
+}
+
+.episodes-item-more-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  svg {
+    position: relative;
+    top: 1px;
+    fill: #71717A;
+  }
 }
 
 .subscribe-sidebar {
