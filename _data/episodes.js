@@ -17,6 +17,9 @@ module.exports = async function() {
 		episodes.push(episode);
 	}
 
+	// Set isLatest to latest episode to make templating easier
+	episodes[0].isLatest = true
+
 	return episodes;
 }
 
