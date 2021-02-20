@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "dev": "gulp dev & gulp watch & eleventy --serve",
+    "start": "run-p watch:*",
+    "watch:gulp": "gulp dev && gulp watch",
+    "watch:eleventy": "eleventy --serve",
     "build": "NODE_ENV=production gulp build && eleventy",
     "netlify": "NODE_ENV=production yarn build"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-cache-assets": "^2.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-sass": "^4.1.0",
+    "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",
-    "moment": "^2.29.1"
-  }
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {}
 }

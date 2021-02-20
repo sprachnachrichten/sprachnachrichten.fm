@@ -15,57 +15,25 @@ metatitle: Episoden
 
     <section class="episodes">
       <div class="episodes-list">
-        <div class="episodes-list-item episodes-list-item--latest">
-          <a class="episodes-item-title-link" href="/episoden/episode/">
-            <h3 class="episodes-item-title title-3">SN017 Das letzte gute soziale Netzwerk</h3>
+        {% for episode in episodes %}
+        <div class="episodes-list-item {% if episode.isLatest %}episodes-list-item--latest{% endif %}">
+          <a class="episodes-item-title-link" href="/episoden/{{ episode.number}}">
+            <h3 class="episodes-item-title title-3">{{ episode.title }}</h3>
           </a>
           <span class="episodes-item-details">
-            <time>24.11.2020</time>
+            <time>{{ episode.publicationDate | formatDate }}</time>
             <span>·</span> 
-            <span>35 Minuten</span>
+            <span>{{ episode.duration | formatDuration }}</span>
           </span>
-          <p class="text-gray">Wir sprechen über die Netflix Dokumentation „The Social Dilemma“, die Gefahren persönlicher Algorithmen und unseren Umgang mit sozialen Medien.</p>
-          <a class="episodes-item-more-link" href="/episoden/episode/">
+          <p class="text-gray">{{ episode.subtitle }}</p>
+          <a class="episodes-item-more-link" href="/episoden/{{ episode.number }}">
             <span>Shownotes anzeigen</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99997 6L8.58997 7.41L13.17 12L8.58997 16.59L9.99997 18L16 12L9.99997 6Z" />
             </svg>
           </a>
         </div>
-        <div class="episodes-list-item">
-          <a class="episodes-item-title-link" href="/episoden/episode/">
-            <h3 class="episodes-item-title title-3">SN016 Es interessiert niemanden, was ich mir wünsche</h3>
-          </a>
-          <span class="episodes-item-details">
-            <time>24.11.2020</time>
-            <span>·</span> 
-            <span>35 Minuten</span>
-          </span>
-          <p class="text-gray">Unsere top 5 macOS Apps und warum wir native Apps Electron oder Catalyst vorziehen und was die Vor- und Nachteile der jeweiligen Technologien sind erfahrt ihr in dieser Episode.</p>
-          <a class="episodes-item-more-link" href="/episoden/episode/">
-            <span>Jetzt anhören</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.99997 6L8.58997 7.41L13.17 12L8.58997 16.59L9.99997 18L16 12L9.99997 6Z" />
-            </svg>
-          </a>
-        </div>
-        <div class="episodes-list-item">
-          <a class="episodes-item-title-link" href="/episoden/episode/">
-            <h3 class="episodes-item-title title-3">SN015 Der Kontrast und die Suche</h3>
-          </a>
-          <span class="episodes-item-details">
-            <time>24.11.2020</time>
-            <span>·</span> 
-            <span>35 Minuten</span>
-          </span>
-          <p class="text-gray">Jan hat ein neues iPhone, wir reden über gesattelte Bürostühle und sprechen über die Design-Änderungen von macOS Big Sur.</p>
-          <a class="episodes-item-more-link" href="/episoden/episode/">
-            <span>Jetzt anhören</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.99997 6L8.58997 7.41L13.17 12L8.58997 16.59L9.99997 18L16 12L9.99997 6Z" />
-            </svg>              
-          </a>
-        </div>
+        {% endfor %}
       </div>
       <aside class="subscribe-sidebar">
         {% include "components/subscribe-box.njk" %}
