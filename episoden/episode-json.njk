@@ -1,0 +1,10 @@
+---
+pagination:
+    data: episodes
+    size: 1
+    alias: episode
+permalink: "episoden/{{ episode.number }}.json"
+---
+
+{{ episode | dump | safe }}
+
