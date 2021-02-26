@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Apple Podcasts",
+    "imageSrc": "apple-podcasts.svg",
+    "link": "https://podcasts.apple.com/de/podcast/sprachnachrichten/id1499096191"
+  },
+  {
+    "title": "Overcast",
+    "imageSrc": "overcast.svg",
+    "link": "#"
+  },
+  {
+    "title": "PocketCasts",
+    "imageSrc": "pocketcasts.svg",
+    "link": "#"
+  },
+  {
+    "title": "Castro",
+    "imageSrc": "castro.svg",
+    "link": "#"
+  },
+  {
+    "title": "RSS Feed",
+    "imageSrc": "rss-feed.svg",
+    "link": "https://sprachnachrichten.fm/feed/mp3"
+  }
+]
