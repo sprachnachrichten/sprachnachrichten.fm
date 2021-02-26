@@ -84,6 +84,11 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@podlove/web-player@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@podlove/web-player/-/web-player-5.4.0.tgz#0c7a4440d19c078c3c4d0cca5a9315eba7e0a233"
+  integrity sha512-DXOexn3xZq6fLMhBVEmxRnRhgo//5AuRrCBDHnxNmbe91Xf3tfwZMUb5Hck6lNNBaElIAloXR0/FyMcD8hnO5A==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.9.tgz#01d7b86949f455402a94c788883fe4ba574cad41"

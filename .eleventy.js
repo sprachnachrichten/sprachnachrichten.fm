@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
 	
 	eleventyConfig.addPassthroughCopy('assets/fonts');
 	eleventyConfig.addPassthroughCopy('assets/images');
+	eleventyConfig.addPassthroughCopy({ 'node_modules/@podlove/web-player': 'podlove-web-player' });
+
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt();
