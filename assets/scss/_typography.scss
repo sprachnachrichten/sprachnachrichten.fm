@@ -1,12 +1,17 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  line-height: 1.25;
 }
 
 .title-1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  letter-spacing: 0.025em;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  
+  @media (min-width: $breakpoint-medium) {
+    font-size: 3rem;
+  }
 }
 
 .title-2 {

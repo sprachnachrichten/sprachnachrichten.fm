@@ -2,6 +2,9 @@
 layout: layouts/default-page.njk
 title: Abonnieren
 metatitle: Abonnieren
+eleventyNavigation:
+  key: Abonnieren
+  order: 4
 ---
 
 Unser Podcast ist frei und offen. Du kannst Sprachnachrichten einfach über alle offenen Podcast Apps abonnieren und bekommst die neuste Episode immer direkt in die Podcast App deines Vertrauens geladen!

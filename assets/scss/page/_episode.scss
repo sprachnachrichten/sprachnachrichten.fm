@@ -42,10 +42,19 @@
   background-color: #18181B;
   border-radius: 6px;
 
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.75rem;
+  }
+
   ul, ol {
     padding: 0 0 0 16px;
     line-height: 2;
   }
+}
+
+.episode-shownotes-card__title {
+  margin: 0 0 24px;
 }
 
 .episode-sidebar {

@@ -1,5 +1,9 @@
 .page-content {
-  padding: 96px 0 192px;
+  padding: 48px 0 96px;
+  
+  @media (min-width: $breakpoint-medium) {
+    padding: 96px 0 192px;
+  }
 }
 
 .page-title {
