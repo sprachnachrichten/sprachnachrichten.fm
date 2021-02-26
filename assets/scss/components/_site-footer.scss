@@ -1,0 +1,34 @@
+.site-footer {
+  padding-bottom: 48px;
+  
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 96px;
+  }
+}
+
+.site-footer-content {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-nav__list {
+  display: flex;
+  margin: 0 0 24px 0;
+  padding: 0;
+  list-style: none;
+  
+  @media (min-width: $breakpoint-medium) {
+    margin: 0;
+  }
+}
+
+.footer-nav__list-item {
+  margin: 0 0 0 24px;
+
+  &:first-child {
+    margin: 0;
+  }
+}
