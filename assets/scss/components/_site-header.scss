@@ -36,10 +36,16 @@
 
 .site-navigation__list {
   display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
   
   li {
+    position: relative;
+    display: flex;
+    align-items: center;
     margin-left: 32px;
+    height: 64px;
     
     &::before {
       margin: 0;
@@ -53,14 +59,26 @@
   line-height: 1.5;
   color: #A1A1AA;
   text-decoration: none;
-
+  
   &:hover, &:focus {
     color: #FFFFFF;
+    text-decoration: none;
   }
 }
 
 .site-navigation__link--active {
   color: #FFFFFF;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(102.71deg, #047857 -38.16%, #0E7490 167.39%);
+  }
 }
 
 .site-header__cta {
