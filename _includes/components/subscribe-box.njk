@@ -1,35 +1,13 @@
 <div class="subscribe-card">
   <h3 class="subscribe-card-title title-4">Abonnieren</h3>
   <ul class="subscribe-list">
+    {% for item in subscribe %}
     <li class="subscribe-item">
-      <a class="subscribe-link" href="https://podcasts.apple.com/de/podcast/sprachnachrichten/id1499096191?l=en">
-        <img class="subscribe-icon" src="/assets/images/subscribe/apple-podcasts.svg" width="24" height="24" alt="">
-        <span>Apple Podcasts</span>
+      <a class="subscribe-link" href="{{ item.link }}">
+        <img class="subscribe-icon" src="/assets/images/subscribe/{{ item.imageSrc }}" width="24" height="24" alt="">
+        <span>{{ item.title }}</span>
       </a>
     </li>
-    <li class="subscribe-item">
-      <a class="subscribe-link" href="#">
-        <img class="subscribe-icon" src="/assets/images/subscribe/overcast.svg" width="24" height="24" alt="">
-        <span>Overcast</span>
-      </a>
-    </li>
-    <li class="subscribe-item">
-      <a class="subscribe-link" href="#">
-        <img class="subscribe-icon" src="/assets/images/subscribe/pocketcasts.svg" width="24" height="24" alt="">
-        <span>PocketCasts</span>
-      </a>
-    </li>
-    <li class="subscribe-item">
-      <a class="subscribe-link" href="#">
-        <img class="subscribe-icon" src="/assets/images/subscribe/castro.svg" width="24" height="24" alt="">
-        <span>Castro</span>
-      </a>
-    </li>
-    <li class="subscribe-item">
-      <a class="subscribe-link" href="https://sprachnachrichten.fm/feed/m4a">
-        <img class="subscribe-icon" src="/assets/images/subscribe/rss-feed.svg" width="24" height="24" alt="">
-        <span>RSS Feed</span>
-      </a>
-    </li>
+    {% endfor %}
   </ul>
 </div>

@@ -1,15 +1,40 @@
 .episode {
-  padding: 96px 0 192px;
+  padding: 48px 0 96px;
+  
+  @media (min-width: $breakpoint-medium) {
+    padding: 96px 0 192px;
+  }
+}
+
+.episode-header__title {
+  margin: 0 0 8px;
 }
 
 .episode-content {
-  display: grid;
-  column-gap: 48px;
-  grid-template-columns: repeat(3, 1fr);
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    column-gap: 48px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .episode-main {
-  grid-column: span 2;
+  margin: 0 0 48px;
+  
+  @media (min-width: $breakpoint-medium) {
+    margin: 0;
+    grid-column: span 2;
+  }
+}
+
+.podlove-player {
+  margin: 0 0 48px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  iframe {
+    display: block;
+  }
 }
 
 .episode-shownotes-card {
@@ -17,10 +42,19 @@
   background-color: #18181B;
   border-radius: 6px;
 
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.75rem;
+  }
+
   ul, ol {
     padding: 0 0 0 16px;
     line-height: 2;
   }
+}
+
+.episode-shownotes-card__title {
+  margin: 0 0 24px;
 }
 
 .episode-sidebar {

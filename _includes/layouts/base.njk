@@ -20,8 +20,9 @@
 
   <style>{% include "css/main.css" %}</style>
 </head>
-<body class="{{ bodyClass }}">
+<body>
   {% include "components/site-header.njk" %}
   {{ content | safe }}
+  {% include "components/site-footer.njk" %}
 </body>
 </html>
