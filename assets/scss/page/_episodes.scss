@@ -1,11 +1,17 @@
 .episodes-content {
-  padding: 96px 0 192px;
+  padding: 48px 0 96px;
+  
+  @media (min-width: $breakpoint-medium) {
+    padding: 96px 0 192px;
+  }
 }
 
 .episodes {
-  display: grid;
-  column-gap: 48px;
-  grid-template-columns: repeat(3, 1fr);
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    column-gap: 48px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .episodes-intro-text {
@@ -13,7 +19,12 @@
 }
 
 .episodes-list {
-  grid-column: span 2;
+  margin: 0 0 48px;
+  
+  @media (min-width: $breakpoint-medium) {
+    margin: 0;
+    grid-column: span 2;
+  }
 }
 
 .episodes-list-item {
@@ -76,5 +87,7 @@
 }
 
 .subscribe-sidebar {
-  grid-column: span 1;
+  @media (min-width: 960px) {
+    grid-column: span 1;
+  }
 }

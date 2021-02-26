@@ -11,18 +11,18 @@ permalink: "episoden/{{ episode.number }}/"
   <div class="wrapper">
     <section class="episode-header">
       <div class="wrapper--small">
-        <h2 class="title-2">{{ episode.title }}</h2>
+        <h2 class="title-2 episode-header__title">{{ episode.title }}</h2>
         <span class="episodes-item-details">
           <time>{{ episode.publicationDate | formatDate }}</time>
           <span>·</span> 
           <span>{{ episode.duration | formatDuration }}</span>
         </span>
-        <p class="text-gray">{{ episode.summary }}</p>
+        <p class="body-big text-gray">{{ episode.summary }}</p>
       </div>
     </section>
     <section class="episode-content">
       <div class="episode-main">
-        <div id="podlove-player"></div>
+        <div id="podlove-player" class="podlove-player"></div>
         <div class="episode-shownotes">
           <div class="episode-shownotes-card">
             <h3 class="title-3">Shownotes</h3>
