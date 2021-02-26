@@ -27,6 +27,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .site-navigation__list {

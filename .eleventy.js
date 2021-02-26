@@ -1,8 +1,11 @@
 const fs = require('fs');
 const { DateTime, Duration } = require('luxon');
 const markdownIt = require('markdown-it');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setDataDeepMerge(true);
 	
