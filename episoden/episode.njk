@@ -35,3 +35,15 @@ permalink: "episoden/{{ episode.number }}/"
     </section>
   </div>
 </main>
+
+<script src="/podlove-web-player/embed.js"></script>
+<script>
+  window
+  .podlovePlayer('#episode-player', '/episodes/{{ episode.number }}.json', '/podlove-web-player-config.json')
+  .then(store => {
+    store.subscribe(() => {
+      console.log(store.getState());
+    });
+  });
+</script>
+
