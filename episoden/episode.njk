@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+pagination:
+    data: episodes
+    size: 1
+    alias: episode
+permalink: "episoden/{{ episode.mnemonic | slug }}/"
+---
+
+<main class="episode">
+  <div class="wrapper">
+    <section class="episode-header">
+      <div class="wrapper--small">
+        <h2 class="title-2">{{ episode.title }}</h2>
+        <span class="episodes-item-details">
+          <time>{{ episode.publicationDate | formatDate }}</time>
+          <span>·</span> 
+          <span>{{ episode.duration | formatDuration }}</span>
+        </span>
+        <p class="text-gray">{{ episode.subtitle }}</p>
+      </div>
+    </section>
+    <section class="episode-content">
+      <div class="episode-shownotes">
+        <div class="episode-shownotes-card">
+          <h3 class="title-3">Shownotes</h3>
+          {{ episode.content | safe }}
+        </div>
+      </div>
+      <aside class="episode-sidebar">
+        {% include "components/hosts.njk" %}
+        {% include "components/subscribe-box.njk" %}
+      </aside>
+    </section>
+  </div>
+</main>
