@@ -1,0 +1,18 @@
+{
+  "version": 5,
+  "base": "/podlove-web-player/",
+  "activeTab": "chapters",
+
+  "theme": {
+    "tokens": {
+      "brand": "#047857",
+      "brandDark": "#047857",
+      "brandDarkest": "#0e7490",
+      "brandLightest": "#E5EAECFF",
+      "shadeDark": "#807E7C",
+      "shadeBase": "#807E7C",
+      "contrast": "#000",
+      "alt": "#fff"
+    }
+  }
+}

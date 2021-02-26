@@ -13,7 +13,8 @@ module.exports = async function() {
 	let episodes = [];
 	for (let i = 0; i < episodeIndex.results.length; i++) {
 		const episodeId = episodeIndex.results[i].id;
-		const episode = await Cache(`${API_ENDPOINT}/podlove/v1/episodes/${episodeId}`, CACHE_OPTS);
+		let episode = await Cache(`${API_ENDPOINT}/podlove/v1/episodes/${episodeId}`, CACHE_OPTS);
+		episode.link = `/episoden/${episode.number}`
 		episodes.push(episode);
 	}
 

@@ -17,14 +17,17 @@ permalink: "episoden/{{ episode.number }}/"
           <span>·</span> 
           <span>{{ episode.duration | formatDuration }}</span>
         </span>
-        <p class="text-gray">{{ episode.subtitle }}</p>
+        <p class="text-gray">{{ episode.summary }}</p>
       </div>
     </section>
     <section class="episode-content">
-      <div class="episode-shownotes">
-        <div class="episode-shownotes-card">
-          <h3 class="title-3">Shownotes</h3>
-          {{ episode.content | safe }}
+      <div class="episode-main">
+        <div id="podlove-player"></div>
+        <div class="episode-shownotes">
+          <div class="episode-shownotes-card">
+            <h3 class="title-3">Shownotes</h3>
+            {{ episode.content | safe }}
+          </div>
         </div>
       </div>
       <aside class="episode-sidebar">
@@ -34,3 +37,11 @@ permalink: "episoden/{{ episode.number }}/"
     </section>
   </div>
 </main>
+
+<script src="/podlove-web-player/embed.js"></script>
+<script>
+  window
+    .podlovePlayer('#podlove-player', '/episoden/{{ episode.number }}.json', '/podlove-web-player-config.json')
+    .then(console.log);
+</script>
+
