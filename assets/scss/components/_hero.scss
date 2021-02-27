@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 800px;
+  height: 720px;
   text-align: center;
   background: #000000 url("/assets/images/hero-background.png");
 
@@ -20,11 +20,20 @@
     position: relative;
     z-index: 10;
   }
+
+  @media (min-width: $breakpoint-medium) {
+    height: 800px;
+  }
 }
 
 .hero-title {
-  font-size: 40px;
+  margin: 0 0 48px;
+  font-size: 28px;
   font-weight: 800;
+  
+  @media (min-width: $breakpoint-medium) {
+    font-size: 40px;
+  }
 }
 
 .hero-actions {

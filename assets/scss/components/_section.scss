@@ -1,5 +1,6 @@
 .section-title-divider {
   position: relative;
+  margin: 0 0 24px;
   &::after {
     content: "";
     display: block;
@@ -19,9 +20,13 @@
   padding: 0 24px;
   color: #FFFFFF;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 32px;
   letter-spacing: 0.025em;
   text-transform: uppercase;
   background-color: #000000;
   z-index: 5;
+  
+  @media (min-width: $breakpoint-medium) {
+    font-size: 48px;
+  }
 }
