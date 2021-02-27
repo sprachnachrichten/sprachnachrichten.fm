@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 800px;
+  padding: 48px 0 96px;
   text-align: center;
   background: #000000 url("/assets/images/hero-background.png");
 
@@ -20,11 +20,31 @@
     position: relative;
     z-index: 10;
   }
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+    height: 800px;
+  }
+}
+
+.podcast-cover {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 48px;
+
+  img {
+    display: block;
+  }
 }
 
 .hero-title {
-  font-size: 40px;
+  margin: 0 0 48px;
+  font-size: 28px;
   font-weight: 800;
+  
+  @media (min-width: $breakpoint-medium) {
+    font-size: 40px;
+  }
 }
 
 .hero-actions {
@@ -32,6 +52,10 @@
   justify-content: center;
 
   .button--clean {
-    margin-left: 24px;
+    margin-left: 16px;
+    
+    @media (min-width: $breakpoint-medium) {
+      margin-left: 24px;
+    }
   }
 }

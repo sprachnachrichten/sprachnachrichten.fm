@@ -16,7 +16,11 @@ body {
 }
 
 .main-content {
-  padding-bottom: 192px;
+  padding-bottom: 96px;
+  
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 192px;
+  }
 }
 
 .wrapper {

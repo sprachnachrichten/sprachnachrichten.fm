@@ -1,7 +1,6 @@
 {
   "version": 5,
   "base": "/podlove-web-player/",
-  "activeTab": "chapters",
 
   "theme": {
     "tokens": {
