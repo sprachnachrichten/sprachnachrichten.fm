@@ -14,12 +14,12 @@ Achtung: Wir sind nicht auf Spotify o.Ä. geschlossenen Plattformen zu finden, d
 Um alle möglichen Funktionen, die wir mit diesem Podcast bereitstellen, empfehlen wir diese Apps:
 
 #### iOS
-- Overcast
-- PocketCasts
-- Castro
-- Apple Podcasts
+- [Overcast](https://overcast.fm)
+- [PocketCasts](https://www.pocketcasts.com)
+- [Castro](https://www.castro.fm)
+- [Apple Podcasts](https://apps.apple.com/de/app/apple-podcasts/id525463029)
 
 #### Android
-- PocketCasts
-- Podcast Addict
-- AntennaPod
+- [PocketCasts](https://www.pocketcasts.com)
+- [Podcast Addict](https://podcastaddict.com/app)
+- [AntennaPod](https://antennapod.org)
