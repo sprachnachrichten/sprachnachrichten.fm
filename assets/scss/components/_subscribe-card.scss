@@ -1,7 +1,7 @@
 .subscribe-card {
   padding: $spacing-regular;
   background-color: $color-dark-level-1;
-  border-radius: $border-radius-defaukt;
+  border-radius: $border-radius-default;
 }
 
 .subscribe-card-title {
@@ -30,13 +30,13 @@
   background-color: $color-dark-level-2;
   text-decoration: none;
   border: 2px solid transparent;
-  border-radius: $border-radius-defaukt;
+  border-radius: $border-radius-default;
 
   &:hover, &:focus {
     color: $color-white;
     border: 2px solid $color-white;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: $transition-default;
   }
 }
 
