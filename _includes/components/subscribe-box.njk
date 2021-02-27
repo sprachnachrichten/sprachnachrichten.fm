@@ -1,10 +1,10 @@
 <div class="subscribe-card">
-  <h3 class="subscribe-card-title title-4">Abonnieren</h3>
+  <h2 class="subscribe-card-title title-4">Abonnieren</h2>
   <ul class="subscribe-list">
     {% for item in subscribe %}
     <li class="subscribe-item">
       <a class="subscribe-link" href="{{ item.link }}">
-        <img class="subscribe-icon" src="/assets/images/subscribe/{{ item.imageSrc }}" width="24" height="24" alt="">
+        <img class="subscribe-icon" src="/assets/images/subscribe/{{ item.imageSrc }}" width="24" height="24" alt="Icon for {{ item.title }}">
         <span>{{ item.title }}</span>
       </a>
     </li>

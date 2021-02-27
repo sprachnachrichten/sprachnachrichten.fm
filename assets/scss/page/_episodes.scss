@@ -58,8 +58,9 @@
 
 .episodes-item-details {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: $spacing-tiny;
   font-size: 14px;
+  font-weight: 600;
   color: $color-text-dark;
 }
 
