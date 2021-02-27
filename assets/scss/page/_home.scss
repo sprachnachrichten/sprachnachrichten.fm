@@ -105,3 +105,18 @@
 .podcast-member__text {
   color: var(--text-color);
 }
+
+.podcast-member__social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.podcast-member__social-item {
+  margin: 0 0 0 16px;
+
+  &:first-child {
+    margin: 0;
+  }
+}

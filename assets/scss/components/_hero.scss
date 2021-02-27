@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 720px;
+  padding: 48px 0 96px;
   text-align: center;
   background: #000000 url("/assets/images/hero-background.png");
 
@@ -22,7 +22,18 @@
   }
 
   @media (min-width: $breakpoint-medium) {
+    padding: 0;
     height: 800px;
+  }
+}
+
+.podcast-cover {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 48px;
+
+  img {
+    display: block;
   }
 }
 
@@ -41,6 +52,10 @@
   justify-content: center;
 
   .button--clean {
-    margin-left: 24px;
+    margin-left: 16px;
+    
+    @media (min-width: $breakpoint-medium) {
+      margin-left: 24px;
+    }
   }
 }
