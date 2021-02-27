@@ -1,30 +1,26 @@
 .button {
   display: inline-block;
-  padding: 12px 24px;
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  padding: $spacing-tiny $spacing-regular;
+  color: $color-white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
   letter-spacing: 0.0125rem;
   text-decoration: none;
   background: linear-gradient(102.71deg, #047857 -38.16%, #0E7490 167.39%);
-  border-radius: 6px;
+  border-radius: $border-radius-default;
   border: 2px solid transparent;
   
   &:hover, &:focus {
-    border: 2px solid white;
+    border: 2px solid $color-white;
     text-decoration: none;
   }
 }
 
-.button--small {
-  padding: 8px 24px;
-}
-
 .button--clean {
-  color: #A1A1AA;
+  color: $color-text;
   background: transparent;
 
   &:hover, &:focus {
-    color: white;
+    color: $color-white;
   }
 }

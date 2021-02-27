@@ -1,11 +1,11 @@
 .page-content {
-  padding: 48px 0 96px;
+  padding: $spacing-medium 0 $spacing-large;
   
   @media (min-width: $breakpoint-medium) {
-    padding: 96px 0 192px;
+    padding: $spacing-large 0 $spacing-giant;
   }
 }
 
 .page-title {
-   margin: 0 0 16px;
+   margin: 0 0 $spacing-small;
 }

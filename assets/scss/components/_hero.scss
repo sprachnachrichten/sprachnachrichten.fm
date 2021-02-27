@@ -2,9 +2,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 48px 0 96px;
+  padding: $spacing-medium 0 $spacing-large;
   text-align: center;
-  background: #000000 url("/assets/images/hero-background.png");
+  background: $color-dark-level-0 url("/assets/images/hero-background.png");
 
   &::before {
     content: "";
@@ -13,7 +13,7 @@
     z-index: 5;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 72%, #000000 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 72%, $color-dark-level-0 100%);
   }
 
   .wrapper {
@@ -30,7 +30,7 @@
 .podcast-cover {
   display: flex;
   justify-content: center;
-  margin: 0 0 48px;
+  margin: 0 0 $spacing-medium;
 
   img {
     display: block;
@@ -38,7 +38,7 @@
 }
 
 .hero-title {
-  margin: 0 0 48px;
+  margin: 0 0 $spacing-medium;
   font-size: 28px;
   font-weight: 800;
   
@@ -52,10 +52,10 @@
   justify-content: center;
 
   .button--clean {
-    margin-left: 16px;
+    margin-left: $spacing-small;
     
     @media (min-width: $breakpoint-medium) {
-      margin-left: 24px;
+      margin-left: $spacing-regular;
     }
   }
 }

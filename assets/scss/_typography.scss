@@ -42,11 +42,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin: 0 0 24px;
+  margin: 0 0 $spacing-regular;
 }
 
 a {
-  color: #07C58F;
+  color: $color-brand-regular;
   text-decoration: none;
   
   &:hover, &:focus {
@@ -56,5 +56,5 @@ a {
 }
 
 .text-gray {
-  color: var(--text-color);
+  color: $color-text;
 }

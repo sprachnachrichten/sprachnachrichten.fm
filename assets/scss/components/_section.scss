@@ -1,6 +1,6 @@
 .section-title-divider {
   position: relative;
-  margin: 0 0 24px;
+  margin: 0 0 $spacing-regular;
   &::after {
     content: "";
     display: block;
@@ -16,14 +16,14 @@
 .section-title-text {
   position: relative;
   display: inline;
-  margin-left: -24px;
-  padding: 0 24px;
-  color: #FFFFFF;
+  margin-left: -#{$spacing-regular};
+  padding: 0 $spacing-regular;
+  color: $color-white;
   font-weight: 800;
   font-size: 32px;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  background-color: #000000;
+  background-color: $color-dark-level-0;
   z-index: 5;
   
   @media (min-width: $breakpoint-medium) {

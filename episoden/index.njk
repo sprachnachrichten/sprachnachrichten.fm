@@ -10,7 +10,7 @@ eleventyNavigation:
 <main class="episodes-content">
   <div class="wrapper">
     <div class="wrapper--small">
-      <h1 class="title-1 page-title">Episoden</h1>
+      <h2 class="title-1 page-title">Episoden</h2>
       <div class="episodes-intro-text body-big text-gray">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna, in augue malesuada aliquam curabitur placerat hac. Dolor mauris scelerisque sit donec ut pretium pellentesque netus nulla.</p>
       </div>
@@ -28,7 +28,7 @@ eleventyNavigation:
             <span>·</span> 
             <span>{{ episode.duration | formatDuration }}</span>
           </span>
-          <p class="text-gray">{{ episode.subtitle }}</p>
+          <p class="text-gray body-big">{{ episode.subtitle }}</p>
           <a class="episodes-item-more-link" href="/episoden/{{ episode.number | slug}}">
             <span>Shownotes anzeigen</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
