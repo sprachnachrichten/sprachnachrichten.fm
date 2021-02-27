@@ -5,6 +5,8 @@ pagination:
     size: 1
     alias: episode
 permalink: "episoden/{{ episode.number }}/"
+eleventyComputed:
+  title: "{{ episode.title }}"
 ---
 
 <main class="episode">
