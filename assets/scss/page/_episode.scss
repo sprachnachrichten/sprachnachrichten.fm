@@ -1,25 +1,25 @@
 .episode {
-  padding: 48px 0 96px;
+  padding: $spacing-medium 0 $spacing-large;
   
   @media (min-width: $breakpoint-medium) {
-    padding: 96px 0 192px;
+    padding: $spacing-large 0 $spacing-giant;
   }
 }
 
 .episode-header__title {
-  margin: 0 0 8px;
+  margin: 0 0 $spacing-tiny;
 }
 
 .episode-content {
   @media (min-width: $breakpoint-medium) {
     display: grid;
-    column-gap: 48px;
+    column-gap: $spacing-medium;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .episode-main {
-  margin: 0 0 48px;
+  margin: 0 0 $spacing-medium;
   
   @media (min-width: $breakpoint-medium) {
     margin: 0;
@@ -28,8 +28,8 @@
 }
 
 .podlove-player {
-  margin: 0 0 48px;
-  border-radius: 6px;
+  margin: 0 0 $spacing-medium;
+  border-radius: $border-radius-defaukt;
   overflow: hidden;
 
   iframe {
@@ -38,23 +38,23 @@
 }
 
 .episode-shownotes-card {
-  padding: 24px;
-  background-color: #18181B;
-  border-radius: 6px;
+  padding: $spacing-regular;
+  background-color: $color-dark-level-1;
+  border-radius: $border-radius-defaukt;
 
   h2 {
-    margin: 0 0 8px;
+    margin: 0 0 $spacing-tiny;
     font-size: 1.75rem;
   }
 
   ul, ol {
-    padding: 0 0 0 16px;
+    padding: 0 0 0 $spacing-small;
     line-height: 2;
   }
 }
 
 .episode-shownotes-card__title {
-  margin: 0 0 24px;
+  margin: 0 0 $spacing-regular;
 }
 
 .episode-sidebar {

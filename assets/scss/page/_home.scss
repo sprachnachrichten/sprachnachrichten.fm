@@ -1,18 +1,18 @@
 .latest-episode {
-  margin-bottom: 96px;
+  margin-bottom: $spacing-large;
 }
 
 .new-teaser {
-  margin-bottom: 96px;
-  padding: 96px 0;
-  background: #18181B;
+  margin-bottom: $spacing-large;
+  padding: $spacing-large 0;
+  background: $color-dark-level-1;
 }
 
 .new-teaser-grid {
 
   @media (min-width: $breakpoint-medium) {
     display: grid;
-    column-gap: 48px;
+    column-gap: $spacing-medium;
     grid-template-columns: repeat(12, 1fr);
   }
 }
@@ -22,7 +22,7 @@
 }
 
 .new-teaser-aside-title {
-  margin: 0 0 8px;
+  margin: 0 0 $spacing-tiny;
 }
 
 .new-teaser-recommendations {
@@ -36,7 +36,7 @@
 }
 
 .new-teaser-item {
-  margin: 0 0 16px;
+  margin: 0 0 $spacing-small;
 
   &:last-child {
     margin: 0;
@@ -45,21 +45,21 @@
   a {
     display: flex;
     align-items: center;
-    padding: 24px 16px;
-    color: #FFFFFF;
-    background-color: #27272A;
+    padding: $spacing-regular $spacing-small;
+    color: $color-white;
+    background-color: $color-dark-level-2;
     border: 2px solid transparent;
-    border-radius: 6px;
+    border-radius: $border-radius-defaukt;
     text-decoration: none;
     
     &:hover, &:focus {
-      border: 2px solid #FFFFFF;
+      border: 2px solid $color-white;
     }
   }
 
   svg {
-    margin-right: 12px;
-    flex: 0 0 24px;
+    margin-right: $spacing-tiny;
+    flex: 0 0 $spacing-regular;
   }
 
   h3 {
@@ -70,44 +70,43 @@
 }
 
 .about-us-intro {
-  margin-bottom: 48px;
-  color: var(--text-color);
+  margin-bottom: $spacing-medium;
+  color: $color-text;
 }
 
 .podcast-members {
   @media (min-width: $breakpoint-medium) {
     display: grid;
-    column-gap: 48px;
+    column-gap: $spacing-medium;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .podcast-member {
-  margin: 0 0 24px;
-  padding: 24px;
-  background-color: #18181B;
-  border-radius: 6px;
+  margin: 0 0 $spacing-regular;
+  padding: $spacing-regular;
+  background-color: $color-dark-level-1;
+  border-radius: $border-radius-defaukt;
   
   @media (min-width: $breakpoint-medium) {
     margin: 0;
-    padding: 32px;
   }
 }
 
 .podcast-member__profile {
-  margin: 0 0 24px;
+  margin: 0 0 $spacing-regular;
 
   img {
-    border-radius: 6px;
+    border-radius: $border-radius-defaukt;
   }
 }
 
 .podcast-member__title {
-  margin: 0 0 8px;
+  margin: 0 0 $spacing-tiny;
 }
 
 .podcast-member__text {
-  color: var(--text-color);
+  color: $color-text;
 }
 
 .podcast-member__social {
@@ -118,7 +117,7 @@
 }
 
 .podcast-member__social-item {
-  margin: 0 0 0 16px;
+  margin: 0 0 0 $spacing-small;
 
   &:first-child {
     margin: 0;

@@ -1,5 +1,22 @@
-:root {
-  --text-color: #A1A1AA;
-}
+$color-white: #FFFFFF;
+
+$color-dark-level-0: #000000;
+$color-dark-level-1: #18181B;
+$color-dark-level-2: #27272A;
+
+$color-brand-regular: #07C58F;
+
+$color-text-dark: #71717A;
+$color-text: #A1A1A1;
+
+$spacing-micro: 4px;
+$spacing-tiny: 8px;
+$spacing-small: 16px;
+$spacing-regular: 24px;
+$spacing-medium: 48px;
+$spacing-large: 96px;
+$spacing-giant: 192px;
+
+$border-radius-defaukt: 6px;
 
 $breakpoint-medium: 960px;

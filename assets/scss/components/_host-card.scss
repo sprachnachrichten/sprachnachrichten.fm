@@ -1,12 +1,12 @@
 .host-card {
-  margin-bottom: 48px;
-  padding: 24px;
-  background-color: #18181B;
-  border-radius: 6px;
+  margin-bottom: $spacing-medium;
+  padding: $spacing-regular;
+  background-color: $color-dark-level-1;
+  border-radius: $border-radius-defaukt;
 }
 
 .host-card-title {
-  margin-bottom: 16px;
+  margin-bottom: $spacing-small;
 }
 
 .host-list {
@@ -18,7 +18,7 @@
 .host-person {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: $spacing-regular;
   
   &:last-child {
     margin-bottom: 0;
@@ -27,8 +27,8 @@
 
 .host-image {
   display: block;
-  margin-right: 16px;
-  border-radius: 6px;
+  margin-right: $spacing-small;
+  border-radius: $border-radius-defaukt;
 }
 
 .host-name {
@@ -39,7 +39,7 @@
 .host-handle {
   font-size: 0.875rem;
   line-height: 1.25;
-  color: var(--text-color);
+  color: $color-text;
   text-decoration: none;
 
   &:hover, &:focus {

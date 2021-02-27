@@ -3,13 +3,13 @@
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  padding: 24px 16px 0 16px;
+  padding: $spacing-regular $spacing-small 0 $spacing-small;
   
   @media (min-width: $breakpoint-medium) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 48px;
+    padding: 0 $spacing-medium;
     height: 64px;
   }
   
@@ -32,12 +32,12 @@
   line-height: 24px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $color-white;
   
   @media (min-width: $breakpoint-medium) {
     position: absolute;
     margin: 0;
-    left: 48px;
+    left: $spacing-medium;
   }
 
   a {
@@ -66,11 +66,11 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: 16px;
+    margin-left: $spacing-small;
     height: 64px;
     
     @media (min-width: $breakpoint-medium) {
-      margin-left: 32px;
+      margin-left: $spacing-regular;
     }
 
     &:first-child {
@@ -93,17 +93,17 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: #A1A1AA;
+  color: $color-text;
   text-decoration: none;
   
   &:hover, &:focus {
-    color: #FFFFFF;
+    color: $color-white;
     text-decoration: none;
   }
 }
 
 .site-navigation__link--active {
-  color: #FFFFFF;
+  color: $color-white;
 
   &::before {
     content: "";
@@ -122,6 +122,6 @@
   @media (min-width: $breakpoint-medium) {
     position: absolute;
     display: block;
-    right: 48px;
+    right: $spacing-medium;
   }
 }
