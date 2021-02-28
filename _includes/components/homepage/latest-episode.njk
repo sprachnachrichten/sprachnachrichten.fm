@@ -1,3 +1,4 @@
+{% set episode = episodes | latestEpisode %}
 <section class="latest-episode">
   <div class="section-title-divider">
     <div class="wrapper">
@@ -5,7 +6,7 @@
     </div>
   </div>
   <div class="wrapper">
-    <div class="podcast-player"></div>
-    <a class="button" href="#">Shownotes anzeigen</a>
+    <div id="podlove-player"></div>
+    <a class="button" href="/episoden/{{ episode.number }}">Shownotes anzeigen</a>
   </div>
 </section>

@@ -1,0 +1,8 @@
+{% if podlovePlayerEpisodeNumber %}
+<script src="/podlove-web-player/embed.js"></script>
+<script>
+  window
+    .podlovePlayer('#podlove-player', '/episoden/{{ podlovePlayerEpisodeNumber }}.json', '/podlove-web-player-config.json')
+    .then(console.log);
+</script>
+{% endif %}

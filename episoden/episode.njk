@@ -7,6 +7,7 @@ pagination:
 permalink: "episoden/{{ episode.number }}/"
 eleventyComputed:
   title: "{{ episode.title }}"
+  podlovePlayerEpisodeNumber: "{{ episode.number }}"
 ---
 
 <main class="episode">
@@ -39,11 +40,3 @@ eleventyComputed:
     </section>
   </div>
 </main>
-
-<script src="/podlove-web-player/embed.js"></script>
-<script>
-  window
-    .podlovePlayer('#podlove-player', '/episoden/{{ episode.number }}.json', '/podlove-web-player-config.json')
-    .then(console.log);
-</script>
-

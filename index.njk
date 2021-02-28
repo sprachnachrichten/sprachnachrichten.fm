@@ -4,6 +4,8 @@ metatitle: Home
 eleventyNavigation:
   key: Home
   order: 1
+eleventyComputed:
+  podlovePlayerEpisodeNumber: "{{ (episodes | latestEpisode).number }}"
 ---
 
 <main class="main-content">
