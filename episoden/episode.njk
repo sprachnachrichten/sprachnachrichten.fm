@@ -40,10 +40,5 @@ eleventyComputed:
   </div>
 </main>
 
-<script src="/podlove-web-player/embed.js"></script>
-<script>
-  window
-    .podlovePlayer('#podlove-player', '/episoden/{{ episode.number }}.json', '/podlove-web-player-config.json')
-    .then(console.log);
-</script>
-
+{% set podlovePlayerEpisodeNumber = episode.number %}
+{% include 'components/podlove-player-js.njk' %}

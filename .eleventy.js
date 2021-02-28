@@ -27,6 +27,8 @@ module.exports = function(eleventyConfig) {
 		return `${parts[0]}:${parts[1]}h`;
   });
 
+	eleventyConfig.addFilter('latestEpisode', episodes => episodes.find(episode => episode.isLatest));
+
   return {
 		templateFormats: ['md', 'njk', 'html'],
 		markdownTemplateEngine: 'njk',

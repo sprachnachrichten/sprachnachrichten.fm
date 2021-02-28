@@ -12,3 +12,7 @@ eleventyNavigation:
 	{% include "components/homepage/teaser.njk" %}
 	{% include "components/homepage/about.njk" %}
 </main>
+
+{% set episode = episodes | latestEpisode %}
+{% set podlovePlayerEpisodeNumber =  episode.number %}
+{% include 'components/podlove-player-js.njk' %}
