@@ -143,3 +143,11 @@
     }
   }
 }
+
+.podcast-member__social-item .podcast-member__social-link-twitter {
+  &:hover, &:focus {
+    svg {
+      fill: #1da1f2;
+    }
+  }
+}
