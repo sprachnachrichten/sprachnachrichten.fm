@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
-    "@podlove/web-player": "^5.4.0"
+    "@podlove/web-player": "^5.4.0",
+    "gulp-responsive": "^3.0.1"
   }
 }
