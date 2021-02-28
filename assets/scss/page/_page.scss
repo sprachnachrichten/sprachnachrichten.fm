@@ -1,3 +1,14 @@
+.page-content--default {
+  h3, h4 {
+    margin: 0 0 $spacing-regular;
+    color: $color-white;
+  }
+
+  h4 {
+    margin: 0 0 $spacing-tiny;
+  }
+}
+
 .page-content {
   padding: $spacing-medium 0 $spacing-large;
   
