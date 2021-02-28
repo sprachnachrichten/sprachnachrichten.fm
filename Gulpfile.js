@@ -22,6 +22,9 @@ gulp.task('images', function () {
   return gulp.src('assets/images/original/**/*.{png,jpg}')
     .pipe(responsive({
       '**/*': [{
+        width: 48,
+        rename: { suffix: '-48px' },
+      },{
         width: 96,
         rename: { suffix: '-96px' },
       },{
