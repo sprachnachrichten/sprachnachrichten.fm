@@ -7,6 +7,7 @@ pagination:
 permalink: "episoden/{{ episode.number }}/"
 eleventyComputed:
   title: "{{ episode.title }}"
+  podlovePlayerEpisodeNumber: "{{ episode.number }}"
 ---
 
 <main class="episode">
@@ -39,6 +40,3 @@ eleventyComputed:
     </section>
   </div>
 </main>
-
-{% set podlovePlayerEpisodeNumber = episode.number %}
-{% include 'components/podlove-player-js.njk' %}

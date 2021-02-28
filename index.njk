@@ -4,6 +4,8 @@ metatitle: Home
 eleventyNavigation:
   key: Home
   order: 1
+eleventyComputed:
+  podlovePlayerEpisodeNumber: "{{ (episodes | latestEpisode).number }}"
 ---
 
 <main class="main-content">
@@ -12,7 +14,3 @@ eleventyNavigation:
 	{% include "components/homepage/teaser.njk" %}
 	{% include "components/homepage/about.njk" %}
 </main>
-
-{% set episode = episodes | latestEpisode %}
-{% set podlovePlayerEpisodeNumber =  episode.number %}
-{% include 'components/podlove-player-js.njk' %}
