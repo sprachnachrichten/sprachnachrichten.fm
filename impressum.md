@@ -4,11 +4,20 @@ title: Impressum
 metatitle: Impressum
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat cum ut amet sapien. Volutpat lobortis in aenean sem vestibulum sit. Facilisis arcu tristique eleifend nulla. Eget velit rhoncus pulvinar pharetra scelerisque porta egestas ante.
+Angaben gemäß § 5 TMG:
+- Jan Früchtl
+- Alois-Eckert-Straße 30
+- 60528 Frankfurt am Main
+- E-Mail: [jan@fruechtl.me](mailto:jan@fruechtl.me)
+- Quelle: [e-recht24.de](https://www.e-recht24.de)
 
-Ut elementum pharetra egestas sit aliquet lectus. Nec cursus at eget a, adipiscing id. Tellus platea ut duis et. Ipsum enim in enim a consequat. Vel praesent rhoncus non ultricies mauris eu egestas pretium in. Adipiscing dui mi ultricies leo, arcu, viverra montes, ante libero. In tempus posuere sit pellentesque mattis et etiam. Sit blandit vitae in massa condimentum cursus lobortis cursus arcu.
+### Haftungsausschluss
 
-Iaculis vel in malesuada risus elementum magna lacinia nam adipiscing. Dictumst et libero nisi egestas vitae in morbi. Sodales in ultrices at ut mauris mollis. Netus pulvinar amet nibh ultricies. Tempus leo lacus, placerat gravida amet et quis posuere. Semper feugiat porttitor non faucibus cursus mi dui pellentesque. Pellentesque amet sit eu sit.
-Amet urna amet mi sed odio eu cursus. Id auctor sed facilisis egestas pulvinar risus. Lacus, et hendrerit arcu nec mauris in dictum auctor. Pretium pellentesque viverra nunc tincidunt risus. Id egestas vel sollicitudin molestie faucibus. Gravida nibh odio arcu lacus. Vitae at leo nibh tellus eget ultricies turpis.
+#### Haftung für Inhalte
+Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
 
-Ac massa habitasse orci aliquet enim feugiat. Pellentesque suspendisse vitae suspendisse ac sit at ipsum a. Dictumst nisi consequat varius massa parturient velit integer est lacus. Habitant ac erat et vitae etiam ac neque. Aliquam viverra ipsum eget aliquet velit. Lacus nisi, fringilla imperdiet sit placerat a suspendisse dolor. Turpis elementum, in et, et id ante ut nisi, erat. Tellus vitae montes, elit quisque posuere. Purus aenean eget tellus diam at ornare nec. Fermentum, sit eu, interdum pulvinar tempor. Lorem pharetra consequat, porttitor ut porttitor cras. Nibh massa sollicitudin mattis morbi imperdiet nunc cursus rhoncus. Pellentesque odio quis parturient interdum.
+#### Haftung für Links
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+Urheberrecht
+
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
