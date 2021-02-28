@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
 	
 	eleventyConfig.addPassthroughCopy('assets/fonts');
 	eleventyConfig.addPassthroughCopy('assets/images');
+	eleventyConfig.addPassthroughCopy('favicon');
+	eleventyConfig.addPassthroughCopy('site.webmanifest');
 	eleventyConfig.addPassthroughCopy({ 'node_modules/@podlove/web-player': 'podlove-web-player' });
 	eleventyConfig.addPassthroughCopy('podlove-web-player-config.json');
 
