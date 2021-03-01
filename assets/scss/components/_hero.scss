@@ -37,14 +37,27 @@
   }
 }
 
-.hero-title {
+.hero-content {
   margin: 0 0 $spacing-medium;
+}
+
+.hero-title {
   font-size: 28px;
   font-weight: 800;
   
   @media (min-width: $breakpoint-medium) {
     font-size: 40px;
   }
+}
+
+.hero-title-support {
+  display: block;
+  margin: 0 0 $spacing-small;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  color: $color-text;
+  text-transform: uppercase;
 }
 
 .hero-actions {

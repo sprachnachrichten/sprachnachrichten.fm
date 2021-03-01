@@ -5,36 +5,36 @@
     </div>
   </div>
   <div class="wrapper">
-    <div class="about-us-intro body-big wrapper--small">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna, in augue malesuada aliquam curabitur placerat hac. Dolor mauris scelerisque sit donec ut pretium pellentesque netus nulla.</p>
-    </div>
     <div class="podcast-members">
+      {% for host in hosts %}
       <div class="podcast-member">
         <figure class="podcast-member__profile">
           <img
-            srcset="/assets/images/optimized/arne-bahlo-96px.jpg 96w, 
-                    /assets/images/optimized/arne-bahlo-192px.jpg 192w, 
-                    /assets/images/optimized/arne-bahlo-256px.jpg 256w, 
-                    /assets/images/optimized/arne-bahlo-512px.jpg 512w, 
-                    /assets/images/optimized/arne-bahlo-1024px.jpg 1024w"
+            srcset="/assets/images/optimized/{{ host.profileImage }}-96px.jpg 96w, 
+                    /assets/images/optimized/{{ host.profileImage }}-192px.jpg 192w, 
+                    /assets/images/optimized/{{ host.profileImage }}-256px.jpg 256w, 
+                    /assets/images/optimized/{{ host.profileImage }}-512px.jpg 512w, 
+                    /assets/images/optimized/{{ host.profileImage }}-1024px.jpg 1024w"
             sizes="96px"
-            src="/assets/images/optimized/arne-bahlo-96px.jpg"
+            src="/assets/images/optimized/{{ host.profileImage }}-96px.jpg"
             alt="Profilbild von Arne Bahlo"
             width="96"
             height="96">
         </figure>
-        <h3 class="podcast-member__title title-4">Arne Bahlo</h3>
-        <p class="podcast-member__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.</p>
+        <h3 class="podcast-member__title title-4">{{ host.name }}</h3>
+        <p class="podcast-member__text">{{ host.bio }}</p>
         <ul class="podcast-member__social">
           <li class="podcast-member__social-item">
-            <a class="podcast-member__social-link-twitter" href="https://twitter.com/arnebahlo">
+            <a class="podcast-member__social-link-twitter" href="{{ host.twitter.url }}">
+              <span class="visually-hidden">Twitter Icon</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 5.92375C21.2563 6.25 20.4637 6.46625 19.6375 6.57125C20.4875 6.06375 21.1363 5.26625 21.4412 4.305C20.6488 4.7775 19.7738 5.11125 18.8412 5.2975C18.0887 4.49625 17.0162 4 15.8462 4C13.5763 4 11.7487 5.8425 11.7487 8.10125C11.7487 8.42625 11.7762 8.73875 11.8438 9.03625C8.435 8.87 5.41875 7.23625 3.3925 4.7475C3.03875 5.36125 2.83125 6.06375 2.83125 6.82C2.83125 8.24 3.5625 9.49875 4.6525 10.2275C3.99375 10.215 3.3475 10.0238 2.8 9.7225C2.8 9.735 2.8 9.75125 2.8 9.7675C2.8 11.76 4.22125 13.415 6.085 13.7962C5.75125 13.8875 5.3875 13.9312 5.01 13.9312C4.7475 13.9312 4.4825 13.9163 4.23375 13.8612C4.765 15.485 6.2725 16.6788 8.065 16.7175C6.67 17.8088 4.89875 18.4662 2.98125 18.4662C2.645 18.4662 2.3225 18.4513 2 18.41C3.81625 19.5813 5.96875 20.25 8.29 20.25C15.835 20.25 19.96 14 19.96 8.5825C19.96 8.40125 19.9538 8.22625 19.945 8.0525C20.7588 7.475 21.4425 6.75375 22 5.92375Z" />
               </svg>
             </a>
           </li>
           <li class="podcast-member__social-item">
-            <a href="https://github.com/bahlo">
+            <a href="{{ host.github.url }}">
+              <span class="visually-hidden">GitHub Icon</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.9987 2C6.4775 2 2 6.59056 2 12.2534C2 16.7827 4.865 20.6252 8.84 21.9822C9.34 22.0767 9.5225 21.7601 9.5225 21.4882C9.5225 21.2444 9.51375 20.5997 9.50875 19.7444C6.7275 20.3635 6.14 18.3695 6.14 18.3695C5.68625 17.1849 5.03 16.8695 5.03 16.8695C4.12125 16.2338 5.0975 16.2466 5.0975 16.2466C6.10125 16.3193 6.62875 17.3036 6.62875 17.3036C7.52125 18.8699 8.97 18.418 9.54 18.155C9.63 17.4925 9.88875 17.0406 10.175 16.784C7.955 16.5249 5.62 15.6453 5.62 11.7173C5.62 10.5977 6.01 9.68243 6.65 8.96499C6.54625 8.70585 6.20375 7.66288 6.7475 6.25227C6.7475 6.25227 7.5875 5.97653 9.4975 7.30289C10.295 7.07566 11.15 6.96204 12.0013 6.95821C12.85 6.96332 13.7062 7.07566 14.505 7.30417C16.4137 5.97781 17.2525 6.25355 17.2525 6.25355C17.7975 7.66544 17.455 8.70712 17.3525 8.96627C17.9937 9.6837 18.38 10.599 18.38 11.7186C18.38 15.6568 16.0425 16.5236 13.815 16.7776C14.1737 17.0942 14.4937 17.7197 14.4937 18.6759C14.4937 20.0469 14.4812 21.1524 14.4812 21.4882C14.4812 21.7626 14.6613 22.0818 15.1687 21.9809C19.1375 20.6227 22 16.7815 22 12.2534C22 6.59056 17.5225 2 11.9987 2Z" />
               </svg>
@@ -42,38 +42,7 @@
           </li>
         </ul>
       </div>
-      <div class="podcast-member">
-        <figure class="podcast-member__profile">
-          <img
-            srcset="/assets/images/optimized/jan-fruechtl-96px.jpg 96w, 
-                    /assets/images/optimized/jan-fruechtl-192px.jpg 192w, 
-                    /assets/images/optimized/jan-fruechtl-256px.jpg 256w, 
-                    /assets/images/optimized/jan-fruechtl-512px.jpg 512w"
-            sizes="96px"
-            src="/assets/images/optimized/jan-fruechtl-96px.jpg"
-            alt="Profilbild von Jan Früchtl"
-            width="96"
-            height="96">
-        </figure>
-        <h3 class="podcast-member__title title-4">Jan Früchtl</h3>
-        <p class="podcast-member__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.</p>
-        <ul class="podcast-member__social">
-          <li class="podcast-member__social-item">
-            <a class="podcast-member__social-link-twitter" href="https://twitter.com/_coolcut">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 5.92375C21.2563 6.25 20.4637 6.46625 19.6375 6.57125C20.4875 6.06375 21.1363 5.26625 21.4412 4.305C20.6488 4.7775 19.7738 5.11125 18.8412 5.2975C18.0887 4.49625 17.0162 4 15.8462 4C13.5763 4 11.7487 5.8425 11.7487 8.10125C11.7487 8.42625 11.7762 8.73875 11.8438 9.03625C8.435 8.87 5.41875 7.23625 3.3925 4.7475C3.03875 5.36125 2.83125 6.06375 2.83125 6.82C2.83125 8.24 3.5625 9.49875 4.6525 10.2275C3.99375 10.215 3.3475 10.0238 2.8 9.7225C2.8 9.735 2.8 9.75125 2.8 9.7675C2.8 11.76 4.22125 13.415 6.085 13.7962C5.75125 13.8875 5.3875 13.9312 5.01 13.9312C4.7475 13.9312 4.4825 13.9163 4.23375 13.8612C4.765 15.485 6.2725 16.6788 8.065 16.7175C6.67 17.8088 4.89875 18.4662 2.98125 18.4662C2.645 18.4662 2.3225 18.4513 2 18.41C3.81625 19.5813 5.96875 20.25 8.29 20.25C15.835 20.25 19.96 14 19.96 8.5825C19.96 8.40125 19.9538 8.22625 19.945 8.0525C20.7588 7.475 21.4425 6.75375 22 5.92375Z" />
-              </svg>
-            </a>
-          </li>
-          <li class="podcast-member__social-item">
-            <a href="https://github.com/coolcut">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.9987 2C6.4775 2 2 6.59056 2 12.2534C2 16.7827 4.865 20.6252 8.84 21.9822C9.34 22.0767 9.5225 21.7601 9.5225 21.4882C9.5225 21.2444 9.51375 20.5997 9.50875 19.7444C6.7275 20.3635 6.14 18.3695 6.14 18.3695C5.68625 17.1849 5.03 16.8695 5.03 16.8695C4.12125 16.2338 5.0975 16.2466 5.0975 16.2466C6.10125 16.3193 6.62875 17.3036 6.62875 17.3036C7.52125 18.8699 8.97 18.418 9.54 18.155C9.63 17.4925 9.88875 17.0406 10.175 16.784C7.955 16.5249 5.62 15.6453 5.62 11.7173C5.62 10.5977 6.01 9.68243 6.65 8.96499C6.54625 8.70585 6.20375 7.66288 6.7475 6.25227C6.7475 6.25227 7.5875 5.97653 9.4975 7.30289C10.295 7.07566 11.15 6.96204 12.0013 6.95821C12.85 6.96332 13.7062 7.07566 14.505 7.30417C16.4137 5.97781 17.2525 6.25355 17.2525 6.25355C17.7975 7.66544 17.455 8.70712 17.3525 8.96627C17.9937 9.6837 18.38 10.599 18.38 11.7186C18.38 15.6568 16.0425 16.5236 13.815 16.7776C14.1737 17.0942 14.4937 17.7197 14.4937 18.6759C14.4937 20.0469 14.4812 21.1524 14.4812 21.4882C14.4812 21.7626 14.6613 22.0818 15.1687 21.9809C19.1375 20.6227 22 16.7815 22 12.2534C22 6.59056 17.5225 2 11.9987 2Z" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
