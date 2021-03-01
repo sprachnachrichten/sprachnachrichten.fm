@@ -26,6 +26,10 @@
   <link rel="alternate" type="application/rss+xml" title="Sprachnachrichten (Ogg Feed)" href="https://sprachnachrichten.fm/feed/ogg/"/>
   <link rel="alternate" type="application/rss+xml" title="Sprachnachrichten (Opus Feed)" href="https://sprachnachrichten.fm/feed/opus/"/>
 
+  {% if redirectTo %}
+  <meta http-equiv="refresh" content="1; url={{ redirectTo }}" />
+  {% endif %}
+
   <style>{% include "css/main.css" %}</style>
 </head>
 <body>

@@ -1,11 +1,12 @@
 ---
-layout: episode.njk
+layout: layouts/default-page.njk
 pagination:
     data: episodes
     size: 1
     alias: episode
 permalink: "{{ episode.title | wordpressPermalink }}/"
 eleventyComputed:
-  title: "{{ episode.title }}"
-  podlovePlayerEpisode: "{{ episode | dump | safe }}"
----
+  title: "Weiterleitung"
+  redirectTo: "/episoden/{{ episode.number }}"
+
+<p>Wenn dich dein Browser nicht weiterleitet, <a href="/episoden/{{ episode.number }}">klick hier</a>.</p>
