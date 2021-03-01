@@ -30,6 +30,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('latestEpisode', episodes => episodes.find(episode => episode.isLatest));
 
+  eleventyConfig.addFilter('wordpressPermalink', title => title.toLowerCase().replace(/\s/gi, '-'));
+
   return {
 		templateFormats: ['md', 'njk', 'html'],
 		markdownTemplateEngine: 'njk',
