@@ -7,7 +7,10 @@
       "handle": "@arnebahlo",
       "url": "https://twitter.com/arnebahlo"
     },
-    "github": "https://github.com/bahlo"
+    "github": {
+      "handle": "bahlo",
+      "url": "https://github.com/bahlo"
+    }
   },
   {
     "name": "Jan Früchtl",
@@ -17,6 +20,9 @@
       "handle": "@_coolcut",
       "url": "https://twitter.com/_coolcut"
     },
-    "github": "https://github.com/coolcut"
+    "github": {
+      "handle": "coolcut",
+      "url": "https://github.com/coolcut"
+    }
   }
 ]
