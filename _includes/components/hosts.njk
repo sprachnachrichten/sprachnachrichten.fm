@@ -1,40 +1,25 @@
 <div class="host-card">
   <h3 class="host-card-title title-4">Hosts</h3>
   <ul class="host-list">
+    {% for host in hosts %}
     <li class="host-person">
       <img  class="host-image"
-            srcset="/assets/images/optimized/arne-bahlo-48px.jpg 48w,
-                    /assets/images/optimized/arne-bahlo-96px.jpg 96w,
-                    /assets/images/optimized/arne-bahlo-192px.jpg 192w,
-                    /assets/images/optimized/arne-bahlo-256px.jpg 256w,
-                    /assets/images/optimized/arne-bahlo-512px.jpg 512w,
-                    /assets/images/optimized/arne-bahlo-1024px.jpg 1024w"
+            srcset="/assets/images/optimized/{{ host.profileImage }}-48px.jpg 48w,
+                    /assets/images/optimized/{{ host.profileImage }}-96px.jpg 96w,
+                    /assets/images/optimized/{{ host.profileImage }}-192px.jpg 192w,
+                    /assets/images/optimized/{{ host.profileImage }}-256px.jpg 256w,
+                    /assets/images/optimized/{{ host.profileImage }}-512px.jpg 512w,
+                    /assets/images/optimized/{{ host.profileImage }}-1024px.jpg 1024w"
             sizes="48px"
-            src="/assets/images/optimized/arne-bahlo-48px.jpg"
-            alt="Profilbild von Arne Bahlo"
+            src="/assets/images/optimized/{{ host.profileImage }}-48px.jpg"
+            alt="Profilbild von {{ host.name }}"
             width="48"
             height="48">
       <div class="host-content">
-        <h3 class="host-name">Arne Bahlo</h3>
-        <a class="host-handle" href="https://twitter.com/arnebahlo">@arnebahlo</a>
+        <h3 class="host-name">{{ host.name }}</h3>
+        <a class="host-handle" href="{{ host.twitter.url }}">{{ host.twitter.handle }}</a>
       </div>
     </li>
-    <li class="host-person">
-      <img  class="host-image" 
-            srcset="/assets/images/optimized/jan-fruechtl-48px.jpg 48w,
-                    /assets/images/optimized/jan-fruechtl-96px.jpg 96w,
-                    /assets/images/optimized/jan-fruechtl-192px.jpg 192w,
-                    /assets/images/optimized/jan-fruechtl-256px.jpg 256w,
-                    /assets/images/optimized/jan-fruechtl-512px.jpg 512w"
-            sizes="48px"
-            src="/assets/images/optimized/jan-fruechtl-48px.jpg"
-            alt="Profilbild von Jan Früchtl"
-            width="48"
-            height="48">
-      <div class="host-content">
-        <h3 class="host-name">Jan Früchtl</h3>
-        <a class="host-handle" href="https://twitter.com/_coolcut">@_coolcut</a>
-      </div>
-    </li>
+    {% endfor %}
   </ul>
 </div>

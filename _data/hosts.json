@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Arne Bahlo",
+    "profileImage": "arne-bahlo",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas nunc sed in ac, sit fames in facilisi. Adipiscing at auctor nullam id convallis amet feugiat tellus.",
+    "twitter": {
+      "handle": "@arnebahlo",
+      "url": "https://twitter.com/arnebahlo"
+    },
+    "github": "https://github.com/bahlo"
+  },
+  {
+    "name": "Jan Früchtl",
+    "profileImage": "jan-fruechtl",
+    "bio": "Jan ist ein Product Designer/Developer. Seit 2015 produziert er Podcasts in den verschiedensten Projekten.",
+    "twitter": {
+      "handle": "@_coolcut",
+      "url": "https://twitter.com/_coolcut"
+    },
+    "github": "https://github.com/coolcut"
+  }
+]
