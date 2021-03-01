@@ -7,7 +7,7 @@ pagination:
 permalink: "episoden/{{ episode.number }}/"
 eleventyComputed:
   title: "{{ episode.title }}"
-  podlovePlayerEpisodeNumber: "{{ episode.number }}"
+  podlovePlayerEpisode: "{{ episode | dump | safe }}"
 ---
 
 <main class="episode">
