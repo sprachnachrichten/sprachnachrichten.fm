@@ -5,7 +5,7 @@ eleventyNavigation:
   key: Home
   order: 1
 eleventyComputed:
-  podlovePlayerEpisodeNumber: "{{ (episodes | latestEpisode).number }}"
+  podlovePlayerEpisode: "{{ episodes | latestEpisode | dump | safe }}"
 ---
 
 <main class="main-content">

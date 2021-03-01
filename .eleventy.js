@@ -14,7 +14,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('favicon');
 	eleventyConfig.addPassthroughCopy('site.webmanifest');
 	eleventyConfig.addPassthroughCopy({ 'node_modules/@podlove/web-player': 'podlove-web-player' });
-	eleventyConfig.addPassthroughCopy('podlove-web-player-config.json');
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt();
