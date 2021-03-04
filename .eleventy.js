@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('assets/images');
 	eleventyConfig.addPassthroughCopy('favicon');
 	eleventyConfig.addPassthroughCopy('site.webmanifest');
+	eleventyConfig.addPassthroughCopy('_redirects');
 	eleventyConfig.addPassthroughCopy({ 'node_modules/@podlove/web-player': 'podlove-web-player' });
 
   /* Markdown Overrides */
