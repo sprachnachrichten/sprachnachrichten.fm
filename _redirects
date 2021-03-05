@@ -1,4 +1,6 @@
 /feed/* https://wordpress.sprachnachrichten.fm/feed/:splat 200
 /podlove/file/* https://wordpress.sprachnachrichten.fm/podlove/file/:splat 200
-/wp-content/uploads/* http://wordpress.sprachnachrichten.fm/wp-content/uploads/:splat 200
 /podcast/* http://wordpress.sprachnachrichten.fm/podcast/:splat 200
+/wp-content/uploads/* http://wordpress.sprachnachrichten.fm/wp-content/uploads/:splat 200
+/wp-includes/* http://wordpress.sprachnachrichten.fm/wp-includes/:splat 200
+/wp-admin/* http://wordpress.sprachnachrichten.fm/wp-admin/:splat 200
