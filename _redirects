@@ -2,3 +2,25 @@
 /podlove/* https://wordpress.sprachnachrichten.fm/podlove/:splat 200
 /podcast/* http://wordpress.sprachnachrichten.fm/podcast/:splat 200
 /wp-content/uploads/* http://wordpress.sprachnachrichten.fm/wp-content/uploads/:splat 200
+
+# Old permalinks
+/sn021-side-project-room/ /episoden/21
+/sn020-der-rechtsweg-ist-ausgeschlossen/ /episoden/20
+/sn019-liest-du-schnell-fuer-inbox-zero/ /episoden/19
+/sn018-yearly-themes-2021/ /episoden/18
+/sn017-das-letzte-gute-soziale-netzwerk/ /episoden/17
+/sn016-es-interessiert-niemanden-was-ich-mir-wuensche/ /episoden/16
+/sn014-ganz-schoen-zettelig/ /episoden/14
+/sn013-ist-ja-auch-egal/ /episoden/13
+/sn012-nsmergebypropertyobjecttrumpmergepolicy/ /episoden/12
+/sn011-fruehjahrsputz-im-herbst/ /episoden/11
+/sn010-hoer-auf-zu-atmen/ /episoden/10
+/sn009-home-office/ /episoden/9
+/sn008-podcasts/ /episoden/8
+/sn007-banking/ /episoden/7
+/sn006-yearly-themes/ /episoden/6
+/sn005-apple-watch/ /episoden/5
+/sn004-ipad/ /episoden/4
+/sn003-digitale-notizen/ /episoden/3
+/sn002-getting-things-done/ /episoden/2
+/sn001-homescreens/ /episoden/1
