@@ -1,4 +1,13 @@
+---
+permalink: _redirects
+eleventyExcludeFromCollections: true
+---
+# Static redirects
 /feed/* https://wordpress.sprachnachrichten.fm/feed/:splat 302
 /podlove/* https://wordpress.sprachnachrichten.fm/podlove/:splat 200
 /podcast/* http://wordpress.sprachnachrichten.fm/podcast/:splat 200
 /wp-content/uploads/* http://wordpress.sprachnachrichten.fm/wp-content/uploads/:splat 200
+
+# Redirect wordpress permalinks to 11ty
+{% for episode in episodes %}/{{ episode.title | wordpressPermalink }}/ /episoden/{{ episode.number }}/
+{% endfor %}
