@@ -1,4 +1,4 @@
-# sprachanchrichten.fm
+# sprachnachrichten.fm
 
 The website of the German podcast Sprachnachrichten: 
 [sprachnachrichten.fm](https://sprachnachrichten.fm).
@@ -33,6 +33,6 @@ Licensed under either of <a href="LICENSE-APACHE">Apache License, Version
 
 <sub>
 Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in Sprachnachrichten.fm by you, as defined in the Apache-2.0 license, 
+for inclusion in sprachnachrichten.fm by you, as defined in the Apache-2.0 license, 
 shall be dual licensed as above, without any additional terms or conditions.
 </sub>
