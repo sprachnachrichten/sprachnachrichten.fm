@@ -26,7 +26,9 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addFilter('formatDuration', duration => {
 		const parts = duration.split(':');
-		return `${parts[0]}:${parts[1]}h`;
+		const hours = parseInt(parts[0], 10);
+		let minutes = parseInt(parts[1], 10);
+		return `${hours*60+minutes} Minuten`;
   });
 
   eleventyConfig.addFilter('latestEpisode', episodes => episodes.find(episode => episode.isLatest));
