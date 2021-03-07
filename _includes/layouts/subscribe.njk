@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+
+<main class="page-content page-content--default">
+  <div class="wrapper">
+    <h2 class="page-title title-1">{{ title }}</h2>
+    <div class="body-big text-gray wrapper--small">
+      <p>Unser Podcast ist frei und offen! Du kannst Sprachnachrichten einfach über alle offenen Podcast Apps abonnieren und bekommst die neuste Episode immer direkt in die Podcast App deines Vertrauens geladen!</p>
+      <div class="subscribe-card subscribe-card--full">
+        <ul class="subscribe-list">
+          {% for item in subscribe %}
+          <li class="subscribe-item">
+            <a class="subscribe-link" href="{{ item.link }}">
+              <img class="subscribe-icon" src="/assets/images/subscribe/{{ item.imageSrc }}" width="24" height="24" alt="Icon for {{ item.title }}">
+              <span>{{ item.title }}</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {{ content | safe }}
+    </div>
+  </div>
+</main>

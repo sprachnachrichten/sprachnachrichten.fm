@@ -45,3 +45,37 @@
   margin-right: $spacing-small;
   border-radius: 50%;
 }
+
+.subscribe-card.subscribe-card--full {
+  margin: 0 0 24px;
+  
+  @media (min-width: $breakpoint-small) {
+    .subscribe-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    
+    .subscribe-item {
+      margin-left: 16px;
+      width: calc(50% - 16px);
+
+      &:nth-child(odd) {
+        margin: 0;
+      }
+    }
+
+    .subscribe-item:last-child {
+      width: 100%;
+    }
+
+    .subscribe-link {
+      display: flex;
+      flex-direction: column;
+
+      .subscribe-icon {
+        margin: 0 0 4px;
+      }
+    }
+  }
+}
