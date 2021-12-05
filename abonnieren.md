@@ -7,8 +7,6 @@ eleventyNavigation:
   order: 4
 ---
 
-*Achtung: Wir sind nicht auf Spotify oder anderen geschlossenen Plattformen zu finden, da diese sich gegen offene und freie Podcast-Standards stellen und auch allgemein kein gutes Hörerlebnis bieten (z.B. Kapitelmarken funktionieren dort nicht).*
-
 Um alle möglichen Funktionen, die wir mit diesem Podcast bereitstellen, nutzen zu können, empfehlen wir diese Apps:
 
 #### iOS
