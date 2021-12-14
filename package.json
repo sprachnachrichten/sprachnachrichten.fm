@@ -7,7 +7,7 @@
     "build:sass": "sass assets/scss/main.scss _includes/css/main.css --style=compressed",
     "watch:sass": "sass assets/scss/main.scss _includes/css/main.css --watch --style=compressed --update",
     "watch:eleventy": "eleventy --serve",
-    "build": "NODE_ENV=production build:sass && eleventy",
+    "build": "NODE_ENV=production yarn build:sass && eleventy",
     "netlify": "NODE_ENV=production yarn build"
   },
   "devDependencies": {
