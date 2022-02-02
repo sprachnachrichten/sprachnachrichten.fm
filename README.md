@@ -3,6 +3,8 @@
 The website of the German podcast Sprachnachrichten: 
 [sprachnachrichten.fm](https://sprachnachrichten.fm).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f930dd6c-5b23-475e-9648-896e3c84ca4e/deploy-status)](https://app.netlify.com/sites/sprachnachrichten/deploys)
+
 ## Get started
 
 With node and yarn installed run:
