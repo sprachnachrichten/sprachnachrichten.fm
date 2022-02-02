@@ -8,7 +8,7 @@ const CACHE_OPTS = {
 	type: 'json'
 }
 
-module.exports = async function() {
+module.exports = async function () {
 	const episodeIndex = await Cache(`${API_ENDPOINT}/podlove/v1/episodes`, CACHE_OPTS);
 
 	let episodes = [];
@@ -16,6 +16,9 @@ module.exports = async function() {
 		const episodeId = episodeIndex.results[i].id;
 		let episode = await Cache(`${API_ENDPOINT}/podlove/v1/episodes/${episodeId}`, CACHE_OPTS);
 		episode.link = `/episoden/${episode.number}`
+
+		let transcripts = await Cache(`${API_ENDPOINT}/podlove/v1/transcripts/${episodeId}`, CACHE_OPTS);
+		episode.transcripts = transcripts;
 
 		episodes.push(episode);
 	}
