@@ -1,18 +1,6 @@
 [
   {
-    "name": "Arne Bahlo",
-    "profileImage": "arne-bahlo",
-    "bio": "Arne ist ein Software Engineer mit Begeisterung für das open web, humane tech und neue Technologien. Er lebt mit seiner Familie im Raum Frankfurt.",
-    "twitter": {
-      "handle": "@arnebahlo",
-      "url": "https://twitter.com/arnebahlo"
-    },
-    "github": {
-      "handle": "bahlo",
-      "url": "https://github.com/bahlo"
-    }
-  },
-  {
+    "id": 1,
     "name": "Jan Früchtl",
     "profileImage": "jan-fruechtl",
     "bio": "Jan ist ein Product Designer/Developer mit Fokus auf Design Systems. Er liebt das Medium Podcast und produziert seit 2015 Podcasts in verschiedensten Zusammensetzungen selbst. Das Schreiben von kurzen Bios gehört nicht zu seinen Stärken.",
@@ -23,6 +11,20 @@
     "github": {
       "handle": "coolcut",
       "url": "https://github.com/coolcut"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Arne Bahlo",
+    "profileImage": "arne-bahlo",
+    "bio": "Arne ist ein Software Engineer mit Begeisterung für das open web, humane tech und neue Technologien. Er lebt mit seiner Familie im Raum Frankfurt.",
+    "twitter": {
+      "handle": "@arnebahlo",
+      "url": "https://twitter.com/arnebahlo"
+    },
+    "github": {
+      "handle": "bahlo",
+      "url": "https://github.com/bahlo"
     }
   }
 ]
