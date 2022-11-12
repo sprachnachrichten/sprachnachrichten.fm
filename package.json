@@ -11,13 +11,13 @@
     "netlify": "NODE_ENV=production yarn build"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-navigation": "^0.3.2",
-    "@podlove/web-player": "^5.7.4",
-    "sass": "^1.45.0",
-    "luxon": "^2.2.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@podlove/web-player": "^5.12.0",
+    "sass": "^1.56.1",
+    "luxon": "^3.1.0",
     "npm-run-all": "^4.1.5",
-    "markdown-it": "^12.3.2"
+    "markdown-it": "^13.0.1"
   }
 }
