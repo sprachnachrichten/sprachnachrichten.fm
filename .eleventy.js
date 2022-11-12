@@ -30,8 +30,9 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter('latestEpisode', episodes => episodes.find(episode => episode.isLatest));
-
 	eleventyConfig.addFilter('wordpressPermalink', title => title.toLowerCase().replace(/\s/gi, '-'));
+	
+	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 	return {
 		templateFormats: ['md', 'njk', 'html'],

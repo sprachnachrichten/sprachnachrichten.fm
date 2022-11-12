@@ -151,3 +151,11 @@
     }
   }
 }
+
+.podcast-member__social-item .podcast-member__social-link-mastodon {
+  &:hover, &:focus {
+    svg {
+      fill: #6364FF;
+    }
+  }
+}

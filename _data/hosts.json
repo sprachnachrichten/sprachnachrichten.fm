@@ -8,6 +8,10 @@
       "handle": "@_coolcut",
       "url": "https://twitter.com/_coolcut"
     },
+    "mastodon": {
+      "handle": "@coolcut",
+      "url": "https://spezi.social/@coolcut"
+    },
     "github": {
       "handle": "coolcut",
       "url": "https://github.com/coolcut"
@@ -18,9 +22,9 @@
     "name": "Arne Bahlo",
     "profileImage": "arne-bahlo",
     "bio": "Arne ist ein Software Engineer mit Begeisterung für das open web, humane tech und neue Technologien. Er lebt mit seiner Familie im Raum Frankfurt.",
-    "twitter": {
-      "handle": "@arnebahlo",
-      "url": "https://twitter.com/arnebahlo"
+    "mastodon": {
+      "handle": "@coolcut",
+      "url": "https://spezi.social/@arne"
     },
     "github": {
       "handle": "bahlo",
