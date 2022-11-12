@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-Gerne hören wir Anmerkungen, Kritiken oder Vorschläge zu unseren Episoden! Schreibt uns dazu gerne eine Nachricht auf [Twitter (@sprachnach)](https://twitter.com/sprachnach) oder eine Mail an [postfach@sprachnachrichten.fm](mailto:postfach@sprachnachrichten.fm).
+Gerne hören wir Anmerkungen, Kritiken oder Vorschläge zu unseren Episoden! Schreibt uns dazu gerne eine Nachricht auf [Mastodon](https://podcasts.social/@sprachnachrichten), [Twitter](https://twitter.com/sprachnach) oder eine Mail an [postfach@sprachnachrichten.fm](mailto:postfach@sprachnachrichten.fm).
 
 Wenn Du unseren Podcast magst, würden wir uns sehr darüber freuen, wenn du Sprachnachrichten einfach einer guten Freund:in weiterempfiehlst.
 
