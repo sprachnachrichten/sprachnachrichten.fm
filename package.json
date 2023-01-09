@@ -16,7 +16,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@podlove/web-player": "^5.12.0",
     "sass": "^1.56.1",
-    "luxon": "^3.1.0",
+    "luxon": "^3.2.1",
     "npm-run-all": "^4.1.5",
     "markdown-it": "^13.0.1"
   }
