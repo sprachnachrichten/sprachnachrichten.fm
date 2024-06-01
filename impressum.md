@@ -6,7 +6,7 @@ metatitle: Impressum
 
 Angaben gemäß § 5 TMG:
 - Jan Früchtl
-- Alois-Eckert-Straße 30
+- Paul-Tillich-Straße 14
 - 60528 Frankfurt am Main
 - E-Mail: [jan@fruechtl.me](mailto:jan@fruechtl.me)
 - Quelle: [e-recht24.de](https://www.e-recht24.de)
